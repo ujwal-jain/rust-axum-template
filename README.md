@@ -3,7 +3,9 @@
 ## Rust Axum API Server Template
 
 To run `cargo run`
+
 To build `cargo build`
+
 To fmt `cargo fmt`
 
 ```

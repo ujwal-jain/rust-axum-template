@@ -2,9 +2,14 @@
 
 ## Rust Axum API Server Template
 
+To run `cargo run`
+To build `cargo build`
+To fmt `cargo fmt`
+
 ```
 http://localhost:3000/:user
+Payload: {}
 ```
 
-- Enter empty payload body
-- Response: "Hello, {:user}!"
+- Expected Response: "Hello, {:user}!"
+

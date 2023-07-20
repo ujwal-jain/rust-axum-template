@@ -1,4 +1,4 @@
-pub mod hello; 
+pub mod hello;
 
 use crate::app_state;
 use axum::middleware::map_response;
@@ -13,8 +13,7 @@ use axum::{
 use crate::routes::hello::hello_world;
 
 pub fn create_routes(state: app_state::AppState) -> Router<(), Body> {
-    let routes = Router::new()
-        .route("/:user", get(hello_world));
+    let routes = Router::new().route("/:user", get(hello_world));
 
     Router::new()
         .merge(routes)

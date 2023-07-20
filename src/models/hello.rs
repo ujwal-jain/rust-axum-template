@@ -21,4 +21,3 @@ impl HelloTable {
         Ok(format!("Hello, {}!", user))
     }
 }
-

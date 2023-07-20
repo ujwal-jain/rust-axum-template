@@ -1,13 +1,16 @@
 use crate::{
     app_state::AppState,
     error::Result,
-    models::hello::{HelloWorldPayload, HelloTable},
+    models::hello::{HelloTable, HelloWorldPayload},
 };
-use axum::{extract::{State, Path}, response::Json};
+use axum::{
+    extract::{Path, State},
+    response::Json,
+};
 use serde_json::{json, Value};
 
 #[axum_macros::debug_handler]
-pub async fn hello_world (
+pub async fn hello_world(
     Path(user): Path<String>,
     State(state): State<AppState>,
     payload: Json<HelloWorldPayload>,
@@ -21,4 +24,3 @@ pub async fn hello_world (
         Err(e) => Err(e),
     }
 }
-

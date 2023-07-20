@@ -1,7 +1,7 @@
 mod app_state;
-mod routes;
 mod error;
 mod models;
+mod routes;
 
 use axum;
 
